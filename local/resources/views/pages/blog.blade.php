@@ -1,0 +1,50 @@
+@extends('layouts.master')
+@section('title', 'Блог компании')
+@section('content')
+    <div class="page-content">
+        <nav class="breadcrumbs">
+            <a class="bread-main" href="/">Главная</a><span class="bread-next"><svg xmlns="http://www.w3.org/2000/svg"version="1.1" viewBox="0 0 240.823 240.823" >
+<g>
+	<path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
+</g>
+</svg></span>
+            <span class="bread-current">Блог</span>
+        </nav>
+        <section class="page-section blogs">
+            <h1 class="page-title">блог</h1>
+            <ul class="blogs-block">
+                <li class="blogs-block-item">
+                    <div class="blogs-block-item__img">
+                        <img src="/img/blogs-preview.png" alt="preview">
+                    </div>
+                    <div class="blogs-block-item__content">
+                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
+                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
+                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
+                    </div>
+                </li>
+                <li class="blogs-block-item">
+                    <div class="blogs-block-item__img">
+                        <img src="/img/blogs-preview.png" alt="preview">
+                    </div>
+                    <div class="blogs-block-item__content">
+                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
+                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
+                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
+                    </div>
+                </li>
+                <li class="blogs-block-item">
+                    <div class="blogs-block-item__img">
+                        <img src="/img/blogs-preview.png" alt="preview">
+                    </div>
+                    <div class="blogs-block-item__content">
+                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
+                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
+                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    </main>
+@endsection
