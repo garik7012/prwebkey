@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('topaside')
     <ul class="left-top-menu__items">
-        <li class="left-menu_current"><a href="/services/smi/">Работа с СМИ</a></li>
+        <li class="left-menu_current"><a href="/services/smi/">Работа со СМИ</a></li>
         <li><a href="/services/smi/">Комплексный продукт</a></li>
         <li><a href="/services/smi/jurn/">Взаимосвязь с журналистами</a></li>
         <li><a href="/services/smi/public/">Публикации в интернет СМИ</a></li>

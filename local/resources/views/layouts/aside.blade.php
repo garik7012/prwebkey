@@ -14,7 +14,7 @@
             '<li><a href="/services/videomaking/">Видео производство</a></li>',
             '<li><a href="/services/konsalting/">PR консалтинг</a></li>',
             '<li><a href="/services/smm/">SMM</a></li>',
-            '<li><a href="/services/smi/">Работа с СМИ</a></li>'
+            '<li><a href="/services/smi/">Работа со СМИ</a></li>'
             ];?>
             @foreach($also_items as $also_item)
                 {!! $also_item !!}

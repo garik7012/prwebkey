@@ -7,6 +7,7 @@
 
     <div class="hexagonals container">
         <div class="hexagonals-item">
+            <a href="/services/search-optimisation/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
                     <g>
@@ -79,8 +80,10 @@
             <span>Поисковый аудит</span>
             <span>Обучение</span>
             <span>&nbsp;</span>
+            </a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/kontekst-reklama/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
                     <g>
@@ -126,8 +129,10 @@
             <span>Таргетированная реклама</span>
             <span>AdWords. Yandex</span>
             <span>&nbsp;</span>
+            </a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/reputation/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
                     <g>
@@ -155,8 +160,10 @@
             <span>Работа с негативом</span>
             <span>Мониторинг</span>
             <span>SERM</span>
+            </a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/copywriting/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 325">
                     <path d="M289.322,122.347c15.658-15.657,13.907-42.885-3.902-60.695c-6.677-6.677-14.655-11.123-22.849-13.273V6
@@ -189,8 +196,10 @@
             <span>Написание релизов</span>
             <span>Написание рекламных</span>
             <span class="text-hyph">текстов</span>
+            </a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/smi/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463">
                     <g>
@@ -272,13 +281,14 @@
                     </g>
                 </svg>
             </div>
-            <h4>Работа с СМИ</h4>
+            <h4>Работа со СМИ</h4>
             <span>Комплексное обслуживание</span>
             <span>Подготовка пресс-релизов</span>
             <span>Пресс-служба</span>
-            <span>&nbsp;</span>
+            <span>&nbsp;</span></a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/videomaking/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79" >
                     <g>
@@ -304,9 +314,10 @@
             <span>Создание рекламного ролика</span>
             <span>Фото-видео съемка</span>
             <span>Видеопрезентация</span>
-            <span>Монтаж видео</span>
+            <span>Монтаж видео</span></a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/lidogen/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 423.803 423.803">
                     <g>
@@ -341,9 +352,10 @@
             <span>Создание клиентской базы</span>
             <span>Анализ и идентификация</span>
             <span>Парсинг данных</span>
-            <span>&nbsp;</span>
+            <span>&nbsp;</span></a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/smm/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496" >
                     <g>
@@ -383,9 +395,10 @@
             <span>Комплексный продукт</span>
             <span>Продвижение видео</span>
             <span>Википедия</span>
-            <span>Блоггеры</span>
+            <span>Блоггеры</span></a>
         </div>
         <div class="hexagonals-item">
+            <a href="/services/konsalting/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 470" >
                     <g>
@@ -396,11 +409,11 @@
                 </svg>
 
             </div>
-            <h4>PR консалтинг</h4>
-            <span>Взаимодействие с СМИ</span>
+            <h4>PR-консалтинг</h4>
+            <span>Взаимодействие со СМИ</span>
             <span>Разработка стратегии</span>
             <span>Мониторинг</span>
-            <span>&nbsp;</span>
+            <span>&nbsp;</span></a>
         </div>
     </div>
 </header>
@@ -772,13 +785,9 @@
                     <img src="/img/blog-preview.jpg" alt="preview">
                 </div>
                 <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">Топ стейк-хаусов по мнению интернет пользователей</h3>
-                    <p class="blog-preview__preview">Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                    <a href="">Далее <span class="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 240.823 240.823" >
-<g>
-	<path d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
-</g>
-</svg></span></a>
+                    <h3 class="title-underline">Влияет ли кнопка Google +1 на поисковую оптимизацию</h3>
+                    <p class="blog-preview__preview">Google объясняет, для чего нужна кнопка «+1», но не объясняет, как она влияет на ранжирование страниц, и во что выльется</p>
+                    <a href="/blog/3">Далее <span class="next-arrow">&#10095;</span></a>
                 </div>
             </li>
             <li class="blog-preview__item">
@@ -786,13 +795,9 @@
                     <img src="/img/blog-preview.jpg" alt="preview">
                 </div>
                 <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">Топ стейк-хаусов по мнению интернет пользователей</h3>
-                    <p class="blog-preview__preview">Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                    <a href="">Далее <span class="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 240.823 240.823" >
-<g>
-	<path d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
-</g>
-</svg></span></a>
+                    <h3 class="title-underline">6 типичных ошибок при публикации постов в FB и способы их устранения</h3>
+                    <p class="blog-preview__preview">Казалось бы, что может быть сложного в публикации постов в Фейсбуке? Принято считать, что с этой задачей справится</p>
+                    <a href="/blog/1">Далее <span class="next-arrow">&#10095;</span></a>
                 </div>
             </li>
             <li class="blog-preview__item">
@@ -800,13 +805,9 @@
                     <img src="/img/blog-preview.jpg" alt="preview">
                 </div>
                 <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">Топ стейк-хаусов по мнению интернет пользователей</h3>
-                    <p class="blog-preview__preview">Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                    <a href="">Далее <span class="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 240.823 240.823" >
-<g>
-	<path d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
-</g>
-</svg></span></a>
+                    <h3 class="title-underline">Как измерять эффективность маркетинговых кампаний в Google+</h3>
+                    <p class="blog-preview__preview">Только ленивый не критиковал социальную сеть Google+ в первые месяцы после начала ее работы.</p>
+                    <a href="/blog/2">Далее <span class="next-arrow">&#10095;</span></a>
                 </div>
             </li>
         </ul>

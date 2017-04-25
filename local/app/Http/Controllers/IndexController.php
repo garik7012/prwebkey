@@ -18,9 +18,6 @@ class IndexController extends Controller
     public function business(){
         return view('pages.business');
     }
-    public function blog(){
-        return view('pages.blog');
-    }
     public function contacts(){
         return view('pages.contacts');
     }

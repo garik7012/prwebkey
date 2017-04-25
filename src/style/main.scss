@@ -11,6 +11,7 @@ $showaw: 45px;
 	width: 100%;
 	height: 685px;
 	background: #111 url('/img/mainh.jpg') no-repeat center 0px;
+	background-size: cover;
   	box-shadow:0 0 0 700px rgba(0, 0, 0, 0.7) inset;
 	padding-top: 15px;
 
@@ -104,11 +105,11 @@ $showaw: 45px;
   width: 226px;
   height: 262px;
   background: url(/img/hexagonal.svg) no-repeat;
+  font-family: "Roboto"; 
   text-align: center;
     h4 {
       color: $yellow;      
-      font-size: 17px;
-      font-family: "Roboto";      
+      font-size: 17px;           
       font-weight: bold;          
       position: relative;
       margin-bottom: 18px;
@@ -123,10 +124,10 @@ $showaw: 45px;
       width: 36%;
       z-index: 10;
     }
-    span {
+    span {      
       display: block;
       margin-bottom: 11px;
-      font-size: 17px;
+      font-size: 15px;
       color: #fff;
     }
     .text-hyph{
@@ -651,7 +652,7 @@ $showaw: 45px;
 }
 .page-content {
   float: right;
-  max-width: 773px;
+  width: 773px;
   font-family: "Roboto";
 }
 .page-section {
@@ -1111,10 +1112,13 @@ h1.page-title {
 }
 .service-search-why__img {
   display: inline-block;
-  width: 74px;
+  width: 60px;
+  height: 70px;
   margin-right: 40px;
+  padding-left: 16px;
+  padding-top: 20px;
   svg {
-    width: 100%;
+    width: 40px;
   }
 }
 .service-search-why__item:last-child {
@@ -1554,6 +1558,13 @@ h1.page-title {
   top: -57px;
   left: 70px;
   width: 112px;
+  height: 128px;
+  svg {
+  	width: 60%;
+  	position: relative;
+  	left: 0%;
+  	top: 20%;
+  }
 }
 .lidogen-item {
   width: 246px;
@@ -1817,6 +1828,12 @@ h1.page-title {
   display: inline-block;
   width: 140px;
   height: 159px;
+  svg {
+  	width: 50%;
+  	position: relative;
+  	left: 25%;
+  	top: 25%;
+  }
 }
 .smi-blokir-box {
   padding: 7px;
@@ -2032,6 +2049,14 @@ h1.page-title {
 .kotekst-item__img {
 	position: absolute;
 	left: 85px;
+	width: 60px;
+  height: 72px;
+  margin-right: 40px;
+  padding-left: 16px;
+  padding-top: 18px;
+  svg {
+    width: 69%;
+  }
 }
 .kotekst-item__text {
   font-size: 17px;
@@ -2071,6 +2096,18 @@ h1.page-title {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 185px;
+	li {
+		background: url('/img/hexagonal-fill.svg');
+		background-size: cover;
+		width: 80px;
+		height: 90px;
+		svg {
+			width: 60%;
+			position: relative;
+			left: 20%;
+			top: 24%;
+		}
+	}
 }
 .kontekst-adword-box {
 	background: url('/img/kontekst-adword-bg.jpg');
@@ -2137,9 +2174,21 @@ h1.page-title {
 		text-align: center;
 	}
 }
+.reputation-circle__img {
+	background: url('/img/hexagonal-fill.svg');
+	background-size: cover;
+	width: 100px;
+	height: 113px;
+	svg {
+		width: 50%;
+		position: relative;
+		left: 25%;
+		top: 25%;
+	}
+}
 .reputation-circle__item:first-child {
 	top: -285px;
-	left: 140px;
+	left: 145px;
 }
 .reputation-circle__item:nth-child(2) {
 	top: -180px;
@@ -2155,7 +2204,7 @@ h1.page-title {
 }
 .reputation-circle__item:nth-child(5) {
 	top: 115px;
-	left: 138px;
+	left: 145px;
 }
 .reputation-circle__item:last-child {
 	top: 22px;
@@ -2374,6 +2423,7 @@ h1.page-title {
     float: none;
     max-width: initial;
     font-family: "Roboto";
+    margin: 0 auto;
     padding: 0 1%;
 }
 .kotekst-box, .copywriting-main-descr, .videomaking-concept,
@@ -2547,6 +2597,11 @@ h1.page-title {
   .smi-table td:first-child, .smi-table th:first-child {
   	width: 25%;
   }
+}
+@media (max-width: 772px) {
+	.page-content {
+		width: initial;
+	}
 }
 @media (max-width: 725px) {
   .hexagonals .hexagonals-item {

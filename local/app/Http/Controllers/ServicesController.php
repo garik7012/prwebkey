@@ -91,6 +91,13 @@ class ServicesController extends Controller
     public function videomaking() {
         return view('services.videomaking');
     }
+        public function videomakingEtaps() {
+            return view('services.videomaking.etaps');
+        }
+        public function videomakingPrice() {
+            return view('services.videomaking.price');
+        }
+
     public function smi() {
         return view('services.smi');
     }

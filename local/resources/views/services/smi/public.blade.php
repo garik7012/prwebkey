@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('topaside')
     <ul class="left-top-menu__items">
-        <li class="left-menu_current"><a href="/services/smi/">Работа с СМИ</a></li>
+        <li class="left-menu_current"><a href="/services/smi/">Работа со СМИ</a></li>
         <li><a href="/services/smi/">Комплексный продукт</a></li>
         <li><a href="/services/smi/jurn/">Взаимосвязь с журналистами</a></li>
         <li><a href="/services/smi/public/">Публикации в интернет СМИ</a></li>
@@ -16,10 +16,10 @@
 	<path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
 </g>
 </svg></span>
-            <span class="bread-current">Моделирование ситуации</span>
+            <span class="bread-current">Публикации в интернет СМИ</span>
         </nav>
         <section class="page-section">
-            <h1 class="page-title">Моделирование ситуации</h1>
+            <h1 class="page-title">Публикации в интернет СМИ</h1>
             <div class="monitoring-descr">
                 <p>Мы работаем с огромным количеством онлайн сми Украины и мира. Вы можете отправить  на согласование свой релиз и мы в течении нескольких часов напишем Вам ответ от редакции.</p>
             </div>
@@ -254,4 +254,44 @@
         </section>
     </div>
     </main>
+    <!-- modal -->
+    <div class="modal-container">
+        <div class="smi-modal" onclick="event.stopPropagation()">
+            <h3>Вы хотите отправить свой материал на сайт <span class="order-to-site"></span></h3>
+            <h4>Пожалуйста, введите свои данные.</h4>
+            <form action="">
+                <div class="left-aside-form">
+                    <label for="left-aside__input-fio">Имя</label>
+                    <input id="left-aside__input-fio" type="text" name="fio">
+                    <label for="left-aside__input-phone">Телефон</label>
+                    <input id="left-aside__input-phone" type="text" name="phone">
+                    <label for="left-aside__input-email">E-mail</label>
+                    <input id="left-aside__input-email" type="text" name="email">
+                    <input type="file" name="ofile">
+                </div>
+                <div class="right-modal-form">
+                    <textarea name="message" placeholder="Введите сообщение"></textarea>
+                    <button type="submit" value="Отправить">Отправить</button>
+                </div>
+            </form>
+            <span class="close-modal">X</span>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.smi-table__button').click(function(){
+                var atosend = $(this).parent().parent().find('a').text();
+                $('.order-to-site').text(atosend);
+                $('.modal-container').show();
+            });
+            $('.modal-container').click(function(){
+                $('.modal-container').hide();
+            });
+            $('.close-modal').click(function(){
+                $('.modal-container').hide();
+                $(this).parent().find('input').val('');
+                $(this).parent().find('textarea').val('');
+            });
+        })
+    </script>
 @endsection

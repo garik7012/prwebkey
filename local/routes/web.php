@@ -19,8 +19,11 @@ Route::get('/services', 'ServicesController@index');
 Route::get('/keises', 'IndexController@keises');
 Route::get('/clients', 'IndexController@clients');
 Route::get('/business', 'IndexController@business');
-Route::get('/blog', 'IndexController@blog');
 Route::get('/contacts', 'IndexController@contacts');
+
+//blog
+Route::get('/blog', 'BlogController@index');
+Route::get('/blog/{id}', 'BlogController@showArticle');
 //services
 Route::get('/services/search-optimisation', 'ServicesController@searchOptim');
 Route::get('/services/reputation', 'ServicesController@reputation');
@@ -58,3 +61,6 @@ Route::get('/services/smm/wiki', 'ServicesController@smmWiki');
 Route::get('/services/smi/public', 'ServicesController@smiPublic');
 Route::get('/services/smi/jurn', 'ServicesController@smiJurn');
 Route::get('/services/smi/blokir', 'ServicesController@smiBlokir');
+//services videomaking
+Route::get('/services/videomaking/etaps', 'ServicesController@videomakingEtaps');
+Route::get('/services/videomaking/price', 'ServicesController@videomakingPrice');

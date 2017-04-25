@@ -455,11 +455,13 @@ var options = {
 };
 
 $('.nav-menu_items').click(function(){
+    if(window.innerWidth < 725) {
     $('.nav-menu_items li').slideToggle();
+    }
 }); 
-$('.show-menu-aside').click(function(){
+$('.show-menu-aside').click(function(){    
     $('.left-aside').toggle(300);
-    $('.menu-aside-arrowd svg').toggleClass('rotate_90');
+    $('.menu-aside-arrowd svg').toggleClass('rotate_90');    
 });
 $('.show-mobile-order button').click(function(){
     $('.left-aside-order').slideToggle();

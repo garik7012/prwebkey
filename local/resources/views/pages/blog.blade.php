@@ -13,36 +13,18 @@
         <section class="page-section blogs">
             <h1 class="page-title">блог</h1>
             <ul class="blogs-block">
+                @foreach($blogs as $blog)
                 <li class="blogs-block-item">
                     <div class="blogs-block-item__img">
-                        <img src="/img/blogs-preview.png" alt="preview">
+                        <img src="{{$blog->preview}}" alt="preview">
                     </div>
                     <div class="blogs-block-item__content">
-                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
-                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
+                        <h4 class="title-underline blogs-item_title">{{$blog->title}}</h4>
+                        <p>{{$blog->anons}}</p>
+                        <a href="/blog/{{$blog->id}}">Далее<span class="next-arrow">&#10095;</span></a>
                     </div>
                 </li>
-                <li class="blogs-block-item">
-                    <div class="blogs-block-item__img">
-                        <img src="/img/blogs-preview.png" alt="preview">
-                    </div>
-                    <div class="blogs-block-item__content">
-                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
-                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
-                    </div>
-                </li>
-                <li class="blogs-block-item">
-                    <div class="blogs-block-item__img">
-                        <img src="/img/blogs-preview.png" alt="preview">
-                    </div>
-                    <div class="blogs-block-item__content">
-                        <h4 class="title-underline blogs-item_title">Топ стейк-хаусов по мнению интернет пользователей</h4>
-                        <p>Исследование лучших по мнению пользователей социальных сетей стейк-хаусов Москвы.</p>
-                        <a href="/blog1.html">Далее<span class="next-arrow">></span></a>
-                    </div>
-                </li>
+                @endforeach
             </ul>
         </section>
     </div>
