@@ -127,8 +127,8 @@
             <h4>Контекстная реклама</h4>
             <span>Товарные агрегаторы</span>
             <span>Таргетированная реклама</span>
-            <span>AdWords. Yandex</span>
-            <span>&nbsp;</span>
+            <span>Google AdWords</span>
+            <span>Яндекс Директ‎</span>
             </a>
         </div>
         <div class="hexagonals-item">
@@ -395,7 +395,7 @@
             <span>Комплексный продукт</span>
             <span>Продвижение видео</span>
             <span>Википедия</span>
-            <span>Блоггеры</span></a>
+            <span>Блоги</span></a>
         </div>
         <div class="hexagonals-item">
             <a href="/services/konsalting/">
@@ -590,10 +590,11 @@
             <span>Оставьте заявку <strong>прямо сейчас</strong></span>
             <span>и узнайте покакой цене мы сможем</span>
             <span class="form-container__description">предложить комплексную PR. компанию</span>
-            <form  class="form-order-consultation" action="/" method="post">
+            <form class="form-order-consultation" action="/order" method="post">
                 <input type="text" name="fio" placeholder="Имя">
                 <input type="tel" name="phone" placeholder="Телефон">
                 <input type="email" name="email" placeholder="Email">
+                {{csrf_field()}}
                 <input type="submit" value="Заказать консультацию">
             </form>
         </div>
@@ -685,10 +686,11 @@
     <h3>Получи консультацию по автоматизации бизнеса стоимостью</h3>
     <h3><strong>1000 грн в подарок</strong></h3>
     <div class="get-your-consultation__form">
-        <form  class="form-order-consultation" action="/" method="post">
+        <form  class="form-order-consultation" action="/order" method="post">
             <input type="text" name="fio" placeholder="Имя">
             <input type="tel" name="phone" placeholder="Телефон">
             <input type="email" name="email" placeholder="Email">
+            {{csrf_field()}}
             <input type="submit" value="Заказать консультацию">
         </form>
     </div>

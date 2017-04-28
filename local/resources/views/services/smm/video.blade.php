@@ -3,7 +3,7 @@
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/smm/">SMM</a></li>
         <li><a href="/services/smm/">Комплексный продукт</a></li>
-        <li><a href="/services/smm/video/">Продвижение видео</a></li>
+        <li><a class="current-link-aside" href="/services/smm/video/">Продвижение видео</a></li>
         <li><a href="/services/smm/wiki/">Википедия</a></li>
         <li><a href="/services/smm/blogers/">Блоггеры</a></li>
     </ul>

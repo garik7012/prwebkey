@@ -24,7 +24,7 @@
 			  </g>
 			</svg>
 			</span>
-                    <span>Киев, ул. Красноткацкая, 43А</span>
+                    <span>Украина, Киев, ул. Попудренка 52</span>
                 </div>
                 <div class="contacts-block__item">
                     <a href="tel:+380445316669">

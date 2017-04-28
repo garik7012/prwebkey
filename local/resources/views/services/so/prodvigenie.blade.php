@@ -2,7 +2,7 @@
 @section('topaside')
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/search-optimisation/">Поисковая оптимизация</a></li>
-        <li><a href="/services/search-optimisation/prodvigenie/">Продвижение сайтов</a></li>
+        <li><a class="current-link-aside" href="/services/search-optimisation/prodvigenie/">Продвижение сайтов</a></li>
         <li><a href="/services/search-optimisation/audit/">Поисковый аудит</a></li>
         <li><a href="/services/search-optimisation/education/">Обучение</a></li>
     </ul>

@@ -5,7 +5,7 @@
         <li><a href="/services/smm/">Комплексный продукт</a></li>
         <li><a href="/services/smm/video/">Продвижение видео</a></li>
         <li><a href="/services/smm/wiki/">Википедия</a></li>
-        <li><a href="/services/smm/blogers/">Блоггеры</a></li>
+        <li><a class="current-link-aside" href="/services/smm/blogers/">Блоггеры</a></li>
     </ul>
 @endsection
 @section('content')

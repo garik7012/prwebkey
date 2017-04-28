@@ -88,6 +88,12 @@ class ServicesController extends Controller
     public function konsalting() {
         return view('services.konsalting');
     }
+        public function konsaltingModelirovanie() {
+            return view('services.konsalting.modelirovanie');
+        }
+        public function konsaltingMonitoring() {
+            return view('services.konsalting.monitoring');
+        }
     public function videomaking() {
         return view('services.videomaking');
     }

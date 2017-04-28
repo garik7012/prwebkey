@@ -2,7 +2,7 @@
 @section('topaside')
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/kontekst-reklama/">Контекстная реклама</a></li>
-        <li><a href="/services/kontekst-reklama/adword/">Adwords Yandex</a></li>
+        <li><a class="current-link-aside" href="/services/kontekst-reklama/adword/">Adwords Yandex</a></li>
         <li><a href="/services/kontekst-reklama/agregator/">Товарные агрегаторы</a></li>
         <li><a href="/services/kontekst-reklama/target/">Таргетированная реклама</a></li>
         <li><a href="/services/kontekst-reklama/soc/">Реклама в соц сетях</a></li>

@@ -2,9 +2,9 @@
 @section('topaside')
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/konsalting/">PR консалтинг</a></li>
-        <li><a href="#">Разработка стратегии</a></li>
-        <li><a href="#">Мониторинг</a></li>
-        <li><a href="#">Моделирование ситуации</a></li>
+        <li><a class="current-link-aside" href="/services/konsalting/">Разработка стратегии</a></li>
+        <li><a href="/services/konsalting/monitoring/">Мониторинг</a></li>
+        <li><a href="/services/konsalting/modelirovanie/">Моделирование ситуации</a></li>
     </ul>
 @endsection
 @section('content')

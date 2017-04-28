@@ -4,7 +4,7 @@
         <li class="left-menu_current"><a href="/services/copywriting/">Копирайтинг</a></li>
         <li><a href="/services/copywriting/">Комплексный продукт</a></li>
         <li><a href="/services/copywriting/napolnenie/">Наполнение контентом</a></li>
-        <li><a href="/services/copywriting/public/">Составление публичной речи</a></li>
+        <li><a class="current-link-aside" href="/services/copywriting/public/">Составление публичной речи</a></li>
         <li><a href="/services/copywriting/reklam/">Написание рекламных текстов</a></li>
     </ul>
 @endsection

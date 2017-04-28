@@ -5,7 +5,7 @@
         <li><a href="#">Комплексный продукт</a></li>
         <li><a href="/services/reputation/serm/">SERM</a></li>
         <li><a href="/services/reputation/negative/">Работа с негативом</a></li>
-        <li><a href="/services/reputation/monitoring/">Мониторинг</a></li>
+        <li><a class="current-link-aside" href="/services/reputation/monitoring/">Мониторинг</a></li>
         <li><a href="#">Исследования</a></li>
     </ul>
 @endsection

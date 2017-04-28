@@ -3,7 +3,7 @@
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/lidogen/">Лидогенерация</a></li>
         <li><a href="/services/lidogen/">Комплексный продукт</a></li>
-        <li><a href="/services/lidogen/parsing/">Парсинг данных</a></li>
+        <li><a class="current-link-aside" href="/services/lidogen/parsing/">Парсинг данных</a></li>
     </ul>
 @endsection
 @section('content')

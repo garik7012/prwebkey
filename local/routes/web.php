@@ -21,6 +21,8 @@ Route::get('/clients', 'IndexController@clients');
 Route::get('/business', 'IndexController@business');
 Route::get('/contacts', 'IndexController@contacts');
 
+//orders
+Route::post('/order', 'OrderController@sendOrder');
 //blog
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{id}', 'BlogController@showArticle');
@@ -64,3 +66,6 @@ Route::get('/services/smi/blokir', 'ServicesController@smiBlokir');
 //services videomaking
 Route::get('/services/videomaking/etaps', 'ServicesController@videomakingEtaps');
 Route::get('/services/videomaking/price', 'ServicesController@videomakingPrice');
+//services pr konsalting
+Route::get('/services/konsalting/monitoring', 'ServicesController@konsaltingMonitoring');
+Route::get('/services/konsalting/modelirovanie', 'ServicesController@konsaltingModelirovanie');

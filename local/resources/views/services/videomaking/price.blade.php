@@ -4,7 +4,7 @@
         <li class="left-menu_current"><a href="/services/videomaking/">Видеопроизводство</a></li>
         <li><a href="/services/videomaking/">Комплексный продукт</a></li>
         <li><a href="/services/videomaking/etaps/">Этапы производства</a></li>
-        <li><a href="/services/videomaking/price/">Стоимость видеоролика</a></li>
+        <li><a class="current-link-aside" href="/services/videomaking/price/">Стоимость видеоролика</a></li>
     </ul>
 @endsection
 @section('content')

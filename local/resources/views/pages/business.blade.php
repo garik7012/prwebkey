@@ -1,13 +1,5 @@
 @extends('layouts.master')
 @section('title', "Бизнес")
-@section('topaside')
-    <ul class="left-top-menu__items">
-        <li class="left-menu_current"><a href="#">Поисковая оптимизация</a></li>
-        <li><a href="#">Продвижение сайтов</a></li>
-        <li><a href="#">Поисковый аудит</a></li>
-        <li><a href="#">Обучение</a></li>
-    </ul>
-@endsection
 @section('content')
     <div class="page-content">
         <nav class="breadcrumbs">
