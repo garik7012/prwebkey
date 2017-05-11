@@ -20,52 +20,71 @@
         </nav>
         <section class="page-section service-search-op">
             <h1 class="page-title">SMM</h1>
-            <ul class="service-search-op_orders">
-                <li class="service-search-op_order">
-                    <div class="service-search-op_order__title">
-                        <h2>Комплексный продукт</h2>
-                    </div>
-                    <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
-                    </div>
-                    <div class="service-search-op_order__content">
-                        <ul class="list_yeloow-mark">
-                            <li><span>Ведение сообществ</span></li>
-                            <li><span>Привлечение аудитории</span></li>
-                            <li><span>Отчетность</span></li>
-                        </ul>
-                        <a href="#"><button>Заказать</button></a>
-                    </div>
-                </li>
-                <li class="service-search-op_order">
-                    <div class="service-search-op_order__title">
-                        <h2>Продвижение видео</h2>
-                    </div>
-                    <div class="service-search-op_order__price">
-                        <h2>Цена: от 50 000 грн.</h2>
-                    </div>
-                    <div class="service-search-op_order__content">
-                        <ul class="list_yeloow-mark">
-                            <li><span>Продвижение видеороликов</span></li>
-                            <li><span>Оплата за просмотры</span></li>
-                        </ul>
-                        <a href="#"><button>Заказать</button></a>
+            <ul class="videomaking-price-items">
+                <li>
+                    <div class="videomaking-price-item">
+                        <div class="service-search-op_order__title">
+                            <h2>Комплексный подход</h2>
+                        </div>
+                        <div class="service-search-op_order__price">
+                            <h2>Цена: от 10 000 грн.</h2>
+                        </div>
+                        <div class="videomaking-price-item__content">
+                            <ul class="list_yeloow-mark">
+                                <li><span>Анализ направления деятельности</span></li>
+                                <li><span>Правильное оформление и брендирование сообщества</span></li>
+                                <li><span>Качественный, уникальный, а главное - интересный контент</span></li>
+                                <li><span>Работа с тегами и таймингом</span></li>
+                                <li><span>Оперативная обработка комментариев и сообщений</span></li>
+                                <li><span>Работа с негативом (жалобы, реклама, комментарии)</span></li>
+                                <li><span>Кооперация с лидерами мнений</span></li>
+                                <li><span>Проведение рекламных кампаний (конкурсы\ивенты\тизерная реклама)</span></li>
+                                <li><span>Автоматический посев в целевых сообществах</span></li>
+                                <li><span>Кооперация с лидерами мнений</span></li>
+                            </ul>
+                            <a href="#" class="show-modal-order" data-service="SMM - Комплексный подход"><button>Заказать</button></a>
+                        </div>
                     </div>
                 </li>
-                <li class="service-search-op_order">
-                    <div class="service-search-op_order__title">
-                        <h2>Википедия</h2>
+                <li>
+                    <div class="videomaking-price-item">
+                        <div class="service-search-op_order__title">
+                            <h2>Медийный взрыв</h2>
+                        </div>
+                        <div class="service-search-op_order__price">
+                            <h2>Цена: от 50 000 грн.</h2>
+                        </div>
+                        <div class="videomaking-price-item__content">
+                            <ul class="list_yeloow-mark">
+                                <li><span>Разработка специального контента</span></li>
+                                <li><span>Привлечение внимание более 10 000 000 пользователей</span></li>
+                                <li><span>Максимальное распространение информации</span></li>
+                                <li><span>Получение откликов от аудитории</span></li>
+                                <li><span>Анализ и прогнозирование результатов</span></li>
+                            </ul>
+                            <a href="#" class="show-modal-order" data-service="SMM - Медийный взрыв"><button>Заказать</button></a>
+                        </div>
                     </div>
-                    <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
-                    </div>
-                    <div class="service-search-op_order__content">
-                        <ul class="list_yeloow-mark">
-                            <li><span>Размещение статей</span></li>
-                            <li><span>Внесение изменений</span></li>
-                            <li><span>Оплата за результат</span></li>
-                        </ul>
-                        <a href="#"><button>Заказать</button></a>
+                </li>
+                <li>
+                    <div class="videomaking-price-item">
+                        <div class="service-search-op_order__title">
+                            <h2>Индивидуальный подход</h2>
+                        </div>
+                        <div class="service-search-op_order__price">
+                            <h2>Цена: договорная</h2>
+                        </div>
+                        <div class="videomaking-price-item__content">
+                            <ul class="list_yeloow-mark">
+                                <li><span>Создание и развитие пабликов в социальных сетях</span></li>
+                                <li><span>Разработка контент-стратегии</span></li>
+                                <li><span>Гидропосев в социальных медиа</span></li>
+                                <li><span>Настройка таргетинговой рекламы</span></li>
+                                <li><span>Сопровождение всех публикаций</span></li>
+                                <li><span>Сопровождение и мониторинг конкурента</span></li>
+                            </ul>
+                            <a href="#" class="show-modal-order" data-service="SMM - Индивидуальный подход"><button>Заказать</button></a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -92,4 +111,5 @@
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

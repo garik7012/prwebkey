@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'IndexController@index');
-
+//Route::get('/test', 'IndexController@test');
 Auth::routes();
 
 Route::get('/services', 'ServicesController@index');
@@ -23,13 +23,15 @@ Route::get('/contacts', 'IndexController@contacts');
 
 //orders
 Route::post('/order', 'OrderController@sendOrder');
+Route::post('/order/aside', 'OrderController@sendAsideOrder');
+Route::post('/order/order', 'OrderController@order');
 //blog
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{id}', 'BlogController@showArticle');
 //services
 Route::get('/services/search-optimisation', 'ServicesController@searchOptim');
 Route::get('/services/reputation', 'ServicesController@reputation');
-Route::get('/services/kontekst-reklama', 'ServicesController@kontekst');
+Route::get('/services/internet-reklama', 'ServicesController@internet');
 Route::get('/services/smm', 'ServicesController@smm');
 Route::get('/services/copywriting', 'ServicesController@copywriting');
 Route::get('/services/videomaking', 'ServicesController@videomaking');
@@ -40,11 +42,11 @@ Route::get('/services/smi', 'ServicesController@smi');
 Route::get('/services/search-optimisation/audit', 'ServicesController@soAudit');
 Route::get('/services/search-optimisation/prodvigenie', 'ServicesController@soProdvigenie');
 Route::get('/services/search-optimisation/education', 'ServicesController@soEducation');
-//services kontekstnaja reklama
-Route::get('/services/kontekst-reklama/adword', 'ServicesController@kontekstAdword');
-Route::get('/services/kontekst-reklama/agregator', 'ServicesController@kontekstAgregator');
-Route::get('/services/kontekst-reklama/soc', 'ServicesController@kontekstSoc');
-Route::get('/services/kontekst-reklama/target', 'ServicesController@kontekstTarget');
+//services internet reklama
+Route::get('/services/internet-reklama/kontekst', 'ServicesController@kontekstAdword');
+//Route::get('/services/kontekst-reklama/agregator', 'ServicesController@kontekstAgregator');
+Route::get('/services/internet-reklama/soc', 'ServicesController@kontekstSoc');
+Route::get('/services/internet-reklama/target', 'ServicesController@kontekstTarget');
 //services reputation
 Route::get('/services/reputation/serm', 'ServicesController@reputationSerm');
 Route::get('/services/reputation/negative', 'ServicesController@reputationNegative');

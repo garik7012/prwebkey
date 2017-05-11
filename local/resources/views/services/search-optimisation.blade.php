@@ -33,7 +33,7 @@
                             <li><span>Рост числа обращений</span></li>
                             <li><span>Максимальная прозрачность</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Поисковая оптимизация - Продвижение сайтов"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
@@ -49,7 +49,7 @@
                             <li><span>Контроль вашего текущего подрядчика</span></li>
                             <li><span>Подробный анализ всех ошибок</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Поисковая оптимизация - Поисковый аудит"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
@@ -64,7 +64,7 @@
                             <li><span>Индивидуальная программа обучения</span></li>
                             <li><span>Простыми словами о сложном</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Поисковая оптимизация - обучение"><button>Заказать</button></a>
                     </div>
                 </li>
             </ul>
@@ -197,4 +197,5 @@
         </section>
     </div>
     </main>
+   @include('layouts.modal')
 @endsection

@@ -38,10 +38,11 @@
                         <li><span>Бюджет на внедрение запланированных мероприятий</span></li>
                         <li><span>Составление списка инструментов для регулярного мониторинга эффективности работы</span></li>
                     </ul>
-                    <a href="#"><button>Заказать</button></a>
+                    <a href="#" class="show-modal-order" data-service="PR консалтинг"><button>Заказать</button></a>
                 </div>
             </div>
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

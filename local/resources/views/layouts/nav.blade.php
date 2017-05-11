@@ -16,6 +16,6 @@
         </ul>
     </nav>
     <div class="main-menu__phone"><a href="tel:+380445316669">+38 044 531 66 69</a></div>
-    <a href="http://fb.com" target="_blank" class="main-menu__f-button">f</a>
+    <a href="https://www.facebook.com/webkeyone/?pnref=story" target="_blank" class="main-menu__f-button">f</a>
     <button class="main-menu__button online-order_button">Online заявка</button>
 </div><!--nav-menu -->

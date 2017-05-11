@@ -35,7 +35,7 @@
                             <li><span>Подробная аналитика</span></li>
                             <li><span>Рост узнаваемости бренда</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - Комплексный продукт"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
@@ -50,24 +50,23 @@
                             <li><span>Управление выдачей поисковиков</span></li>
                             <li><span>Вытеснение негатива</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - SERM"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
                     <div class="service-search-op_order__title">
-                        <h2>Обучение</h2>
+                        <h2>Написание отзывов</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
+                        <h2>Цена: от 5 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
-                            <li><span>Аналитика</span></li>
-                            <li><span>Подготовка стратегий</span></li>
-                            <li><span>Реакция на негатив</span></li>
-                            <li><span>Работа с отзывами</span></li>
+                            <li><span>Работа в блогах, форумах</span></li>
+                            <li><span>Интервью с клиентами</span></li>
+                            <li><span>Размещение позитивных отзывов</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - Написание отзывов"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
@@ -75,7 +74,7 @@
                         <h2>Мониторинг</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
+                        <h2>Цена: от 10 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
@@ -83,37 +82,39 @@
                             <li><span>Классификация упоминаний</span></li>
                             <li><span>Определение тональности</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - Мониторинг"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
                     <div class="service-search-op_order__title">
-                        <h2>Исследования</h2>
+                        <h2>Работа с негативом</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
+                        <h2>Цена: от 8 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
-                            <li><span>Аналитика online</span></li>
-                            <li><span>Классификация упоминаний</span></li>
+                            <li><span>Молниеносная реакция</span></li>
+                            <li><span>Анализ негатива</span></li>
+                            <li><span>Иследование негатива</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - Работа с негативом"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
                     <div class="service-search-op_order__title">
-                        <h2>Исследования</h2>
+                        <h2>Индивидуальных подход</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
+                        <h2>Цена: договорная</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
-                            <li><span>Аналитика online</span></li>
-                            <li><span>Классификация упоминаний</span></li>
+                            <li><span>Анализ индикаторов негатива</span></li>
+                            <li><span>Разработка стратегии</span></li>
+                            <li><span>Прогнозирование ситуации</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Управление репутацией - Индивидуальных подход"><button>Заказать</button></a>
                     </div>
                 </li>
             </ul>
@@ -312,4 +313,5 @@
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

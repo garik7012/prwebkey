@@ -57,7 +57,7 @@
                                     <li><span>Посев (опционально)</span></li>
                                     <li><span>Хранение исходников до 1 года</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Видеопроизводство - Видео. Инфографика"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -97,7 +97,7 @@
                                     <li><span>Посев (опционально)</span></li>
                                     <li><span>Хранение исходников до 1 года</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Видеопроизводство - Видеопрезентация"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -140,7 +140,7 @@
                                     <li><span>Полное соответствие требованиям канала</span></li>
                                     <li><span>Посев (опционально)</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Видеопроизводство - Видеоролики для ТВ"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -180,20 +180,21 @@
             </div>
             <h2 class="videomaking-portfolio-title">ПОРТФОЛИО</h2>
             <ul class="videomaking-portfolio-items">
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
-                <li class="videomaking-portfolio-item"></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/jSbpW9sLUwc" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/bydI2mrrU1s" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/Cqu92Xu6xzs" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/cxbbsoPQ0TM" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/7XW7x3BWG8s" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/Ykr6tJzyBp0" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/GvETIqFnnFc" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/w3xma5EHnhE" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/8vRTwChhjJk" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/OhMvl3jcuUc" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/82DxIJufKqU" frameborder="0" allowfullscreen></iframe></li>
+                <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/hwsTPxrj0nA" frameborder="0" allowfullscreen></iframe></li>
             </ul>
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

@@ -53,10 +53,11 @@
                         <li><span>Выпуск собственного печатного издания.</span></li>
                         <li><span>Участие в создании фирменного стиля, собственной рекламной продукции (бланки, визитки, плакаты, сувенирные календари, буклеты, брошюры и т.д., и т.п.).</span></li>
                     </ul>
-                    <a href="#"><button>Заказать</button></a>
+                    <a href="#" class="show-modal-order" data-service="Работа с СМИ"><button>Заказать</button></a>
                 </div>
             </div>
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

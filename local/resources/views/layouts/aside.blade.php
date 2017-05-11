@@ -7,7 +7,7 @@
         <ul class="left-menu-also__items">
             <?php $also_items = [
             '<li><a href="/services/search-optimisation/">Поисковая оптимизация</a></li>',
-            '<li><a href="/services/kontekst-reklama/">Контекстная реклама</a></li>',
+            '<li><a href="/services/internet-reklama/">Интернет реклама</a></li>',
             '<li><a href="/services/reputation/">Управление репутацией</a></li>',
             '<li><a href="/services/lidogen/">Лидогенерация</a></li>',
             '<li><a href="/services/copywriting/">Копирайтинг</a></li>',
@@ -27,9 +27,9 @@
     <div class="left-aside-order">
         <h2>заявка на услуги</h2>
         <div class="left-aside-form">
-            <form action="">
+            <form id="left-form_aside" action="/order/aside" method="post">
                 <label for="left-aside__input-offer">Услуга</label>
-                <input id="left-aside__input-offer" type="text" name='offer'>
+                <input id="left-aside__input-offer" type="text" name='service'>
                 <label for="left-aside__input-fio">Имя</label>
                 <input id="left-aside__input-fio" type="text" name="fio">
                 <label for="left-aside__input-phone">Телефон</label>
@@ -38,6 +38,7 @@
                 <input id="left-aside__input-email" type="text" name="email">
                 <label for="left-aside__input-site">Ваш сайт</label>
                 <input id="left-aside__input-site" type="text" name="site">
+                {{csrf_field()}}
                 <input type="submit" value="Заказать консультацию">
             </form>
         </div>

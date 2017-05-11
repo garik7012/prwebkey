@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('topaside')
     <ul class="left-top-menu__items">
-        <li class="left-menu_current"><a href="/services/kontekst-reklama/">Контекстная реклама</a></li>
-        <li><a href="/services/kontekst-reklama/adword/">Adwords Yandex</a></li>
-        <li><a href="/services/kontekst-reklama/agregator/">Товарные агрегаторы</a></li>
-        <li><a class="current-link-aside" href="/services/kontekst-reklama/target/">Таргетированная реклама</a></li>
-        <li><a href="/services/kontekst-reklama/soc/">Реклама в соц сетях</a></li>
+        <li class="left-menu_current"><a href="/services/internet-reklama/">Интернет реклама</a></li>
+        <li><a href="/services/internet-reklama/kontekst/">Контекстная реклама</a></li>
+        {{--<li><a href="/services/kontekst-reklama/agregator/">Товарные агрегаторы</a></li>--}}
+        <li><a class="current-link-aside" href="/services/internet-reklama/target/">Таргетированная реклама</a></li>
+        <li><a href="/services/internet-reklama/soc/">Реклама в соц сетях</a></li>
     </ul>
 @endsection
 @section('content')

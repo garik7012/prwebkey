@@ -21,4 +21,11 @@ class IndexController extends Controller
     public function contacts(){
         return view('pages.contacts');
     }
+    public function showSuccessPage(){
+        return view('actions.success');
+    }
+
+    public function test(){
+        mail('garik7012@mail333.com', 'test', 'test message');
+    }
 }

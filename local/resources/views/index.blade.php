@@ -83,7 +83,7 @@
             </a>
         </div>
         <div class="hexagonals-item">
-            <a href="/services/kontekst-reklama/">
+            <a href="/services/internet-reklama/">
             <div class="svg-container hexagonal__item-image">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
                     <g>
@@ -124,11 +124,11 @@
                     </g>
                 </svg>
             </div>
-            <h4>Контекстная реклама</h4>
-            <span>Товарные агрегаторы</span>
+            <h4>Интернет реклама</h4>
+            <span>Контекстная реклама</span>
             <span>Таргетированная реклама</span>
-            <span>Google AdWords</span>
-            <span>Яндекс Директ‎</span>
+            <span>Медийная реклама</span>
+            <span>‎</span>
             </a>
         </div>
         <div class="hexagonals-item">
@@ -588,12 +588,12 @@
         </div>
         <div class="form-container">
             <span>Оставьте заявку <strong>прямо сейчас</strong></span>
-            <span>и узнайте покакой цене мы сможем</span>
-            <span class="form-container__description">предложить комплексную PR. компанию</span>
+            <span>и узнайте по какой цене мы сможем</span>
+            <span class="form-container__description">предложить комплексную PR-компанию</span>
             <form class="form-order-consultation" action="/order" method="post">
-                <input type="text" name="fio" placeholder="Имя">
-                <input type="tel" name="phone" placeholder="Телефон">
-                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="fio" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="email" name="email" placeholder="Email" required>
                 {{csrf_field()}}
                 <input type="submit" value="Заказать консультацию">
             </form>
@@ -687,9 +687,9 @@
     <h3><strong>1000 грн в подарок</strong></h3>
     <div class="get-your-consultation__form">
         <form  class="form-order-consultation" action="/order" method="post">
-            <input type="text" name="fio" placeholder="Имя">
-            <input type="tel" name="phone" placeholder="Телефон">
-            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="fio" placeholder="Имя" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <input type="email" name="email" placeholder="Email" required>
             {{csrf_field()}}
             <input type="submit" value="Заказать консультацию">
         </form>

@@ -32,7 +32,7 @@
                                 <ul class="list_yeloow-mark">
                                     <li><span>Оплата только за результат.<br/>Вы платите только за конкретные действия потенциальных клиентов. Таким действием может быть заявка, звонок или приход потенциального клиента в ваш офис.</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Лидогенерация - Оплата за лид"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -50,7 +50,7 @@
                                     <li><span>Создание продающего сайта.</span></li>
                                     <li><span>Настройка рекламы/продвижения.</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Лидогенерация - Эконом"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -72,7 +72,7 @@
                                     <li><span>Проведение рекламных компаний он-лайн/ SEO</span></li>
                                     <li><span>Подключение к ПО и передача технологии Marketing Automation</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Лидогенерация - Стандарт"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -244,4 +244,5 @@
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

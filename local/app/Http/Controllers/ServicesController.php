@@ -35,20 +35,20 @@ class ServicesController extends Controller
             return view('services.reputation.monitoring');
         }
 
-    public function kontekst() {
-        return view('services.kontekst-reklama');
+    public function internet() {
+        return view('services.internet-reklama');
     }
         public function kontekstAdword() {
-            return view('services.kontekst.adword');
+            return view('services.internet.adword');
         }
         public function kontekstAgregator() {
-            return view('services.kontekst.agregator');
+            return view('services.internet.agregator');
         }
         public function kontekstSoc() {
-            return view('services.kontekst.soc');
+            return view('services.internet.soc');
         }
         public function kontekstTarget() {
-            return view('services.kontekst.target');
+            return view('services.internet.target');
         }
 
 

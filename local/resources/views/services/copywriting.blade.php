@@ -43,7 +43,7 @@
                                     <li><span>Корпоративный отзыв о работе компании</span></li>
                                     <li><span>Слоган</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Копирайтинг - «Студент»"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -68,7 +68,7 @@
                                     <li><span>Корпоративный отзыв о работе компании</span></li>
                                     <li><span>Слоган</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Копирайтинг - «Креатив»"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -93,7 +93,7 @@
                                     <li><span>Корпоративный отзыв о работе компании</span></li>
                                     <li><span>Слоган</span></li>
                                 </ul>
-                                <a href="#"><button>Заказать</button></a>
+                                <a href="#" class="show-modal-order" data-service="Копирайтинг - «Профессионал»"><button>Заказать</button></a>
                             </div>
                         </div>
                     </li>
@@ -115,4 +115,5 @@
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection

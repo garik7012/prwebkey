@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('topaside')
     <ul class="left-top-menu__items">
-        <li class="left-menu_current"><a href="/services/kontekst-reklama/">Контекстная реклама</a></li>
-        <li><a href="/services/kontekst-reklama/adword/">Adwords Yandex</a></li>
-        <li><a href="/services/kontekst-reklama/agregator/">Товарные агрегаторы</a></li>
-        <li><a href="/services/kontekst-reklama/target/">Таргетированная реклама</a></li>
-        <li><a href="/services/kontekst-reklama/soc/">Реклама в соц сетях</a></li>
+        <li class="left-menu_current"><a href="/services/internet-reklama/">Интернет реклама</a></li>
+        <li><a href="/services/internet-reklama/kontekst/">Контекстная реклама</a></li>
+        {{--<li><a href="/services/kontekst-reklama/agregator/">Товарные агрегаторы</a></li>--}}
+        <li><a href="/services/internet-reklama/target/">Таргетированная реклама</a></li>
+        <li><a href="/services/internet-reklama/soc/">Реклама в соц сетях</a></li>
     </ul>
 @endsection
 @section('content')
@@ -16,25 +16,25 @@
 	<path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
 </g>
 </svg></span>
-            <span class="bread-current">Контекстная реклама</span>
+            <span class="bread-current">Интернет реклама</span>
         </nav>
         <section class="page-section">
-            <h1 class="page-title">Контекстная реклама</h1>
+            <h1 class="page-title">Интернет реклама</h1>
             <ul class="service-search-op_orders">
                 <li class="service-search-op_order">
                     <div class="service-search-op_order__title">
-                        <h2>Товарные агрегаторы</h2>
+                        <h2>Контекстная реклама</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 7 000 грн.</h2>
+                        <h2>Цена: 10 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
-                            <li><span>Яндекс.Маркет и Google Merchant</span></li>
-                            <li><span>Для интернет-магазинов</span></li>
+                            <li><span>Настройка кампаний в Яндекс.Директ и Google AdWords</span></li>
+                            <li><span>Оптимизация и аналитика кампании</span></li>
                             <li><span>Высокая конверсия трафика</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Интернет реклама - Контекстная реклама"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
@@ -42,29 +42,31 @@
                         <h2>Таргетированная реклама</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 20 000 грн.</h2>
+                        <h2>Цена: 10 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
                             <li><span>Аудитория социальных сетей</span></li>
                             <li><span>Аудиторный таргетинг</span></li>
+                            <li><span>Подбор целевой аудитории</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Интернет реклама - Таргетированная реклама"><button>Заказать</button></a>
                     </div>
                 </li>
                 <li class="service-search-op_order">
                     <div class="service-search-op_order__title">
-                        <h2>Обучение</h2>
+                        <h2>Медийная реклама</h2>
                     </div>
                     <div class="service-search-op_order__price">
-                        <h2>Цена: от 25 000 грн.</h2>
+                        <h2>Цена: 15 000 грн.</h2>
                     </div>
                     <div class="service-search-op_order__content">
                         <ul class="list_yeloow-mark">
-                            <li><span>Lorem ipsum dolor.</span></li>
-                            <li><span>Lorem ipsum.</span></li>
+                            <li><span>Подборка тематических площадок</span></li>
+                            <li><span>Формирование узнаваемости</span></li>
+                            <li><span>Анализ результатов</span></li>
                         </ul>
-                        <a href="#"><button>Заказать</button></a>
+                        <a href="#" class="show-modal-order" data-service="Интернет реклама - Медийная реклама"><button>Заказать</button></a>
                     </div>
                 </li>
             </ul>
@@ -160,4 +162,5 @@
         </section>
     </div>
     </main>
+    @include('layouts.modal')
 @endsection
