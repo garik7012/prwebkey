@@ -1,5 +1,34 @@
-@section('title', 'PR студия')
+@section('title', $pageseo->title)
+@section('keywords', $pageseo->keywords)
+@section('description', $pageseo->description)
 @include('layouts.head')
+<style>
+    #up {
+        display:none;
+        width:74px;
+        height:126px;
+        background:url("/img/up.png") no-repeat; /* картинка  кнопки*/
+        text-align:center;
+        padding:5px;
+        position:fixed;
+        bottom:10px; /* отступы кнопки*/
+        right:10px; /* отступы кнопки*/
+        cursor:pointer;
+        opacity: 0.2;  /* минимальное значение прозрачности*/
+        transition: opacity 0.3s ease 0s; /*время анимации прозрачности*/
+        -webkit-transition: opacity 0.3s ease 0s;
+        animation: toggleOpacity 3s linear infinite;
+        -webkit-animation: toggleOpacity 3s linear infinite;
+    }
+
+    @keyframes toggleOpacity {
+        50% { bottom: 35px; opacity: 0.7;}
+    }
+
+    #up:hover {
+        opacity: 1.0;
+    }
+</style>
 <header class="header b_header">
     @include('layouts.nav')
 
@@ -782,37 +811,40 @@
     <h2 class="title-underline">Читайте в блоге</h2>
     <div class="container">
         <ul class="blog-preview-items">
+            @foreach($blogs as $blog)
             <li class="blog-preview__item">
                 <div class="image-container">
-                    <img src="/img/blog-preview.jpg" alt="preview">
+                    <img src="/{{$blog->preview}}" alt="preview">
                 </div>
                 <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">Влияет ли кнопка Google +1 на поисковую оптимизацию</h3>
-                    <p class="blog-preview__preview">Google объясняет, для чего нужна кнопка «+1», но не объясняет, как она влияет на ранжирование страниц, и во что выльется</p>
-                    <a href="/blog/3">Далее <span class="next-arrow">&#10095;</span></a>
+                    <h3 class="title-underline">{{$blog->title}}</h3>
+                    <p class="blog-preview__preview">{{$blog->anons}}</p>
+                    <a href="/blog/{{$blog->id}}">Далее <span class="next-arrow">&#10095;</span></a>
                 </div>
             </li>
-            <li class="blog-preview__item">
-                <div class="image-container">
-                    <img src="/img/blog-preview.jpg" alt="preview">
-                </div>
-                <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">6 типичных ошибок при публикации постов в FB и способы их устранения</h3>
-                    <p class="blog-preview__preview">Казалось бы, что может быть сложного в публикации постов в Фейсбуке? Принято считать, что с этой задачей справится</p>
-                    <a href="/blog/1">Далее <span class="next-arrow">&#10095;</span></a>
-                </div>
-            </li>
-            <li class="blog-preview__item">
-                <div class="image-container">
-                    <img src="/img/blog-preview.jpg" alt="preview">
-                </div>
-                <div class="blog-preview__text-preview">
-                    <h3 class="title-underline">Как измерять эффективность маркетинговых кампаний в Google+</h3>
-                    <p class="blog-preview__preview">Только ленивый не критиковал социальную сеть Google+ в первые месяцы после начала ее работы.</p>
-                    <a href="/blog/2">Далее <span class="next-arrow">&#10095;</span></a>
-                </div>
-            </li>
+            @endforeach
         </ul>
     </div>
 </section>
+<a id="up" href="#" onclick="return up()"></a>
+@include('layouts.oline-modal')
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 700) {
+                $('#up').fadeIn();
+            } else {
+                $('#up').fadeOut();
+            }
+    });
+    });
+    function up() {
+        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+        if(top > 0) {
+            window.scrollBy(0,((top+20)/-10));
+            t = setTimeout('up()',40);
+        } else clearTimeout(t);
+        return false;
+    }
+</script>
 @include('layouts.footer')

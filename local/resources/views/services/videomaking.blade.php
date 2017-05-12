@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title', $pageseo->title)
+@section('keywords', $pageseo->keywords)
+@section('description', $pageseo->description)
 @section('topaside')
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/videomaking/">Видеопроизводство</a></li>
@@ -10,12 +13,10 @@
 @section('content')
     <div class="page-content">
         <nav class="breadcrumbs">
-            <a class="bread-main" href="/">Главная</a><span class="bread-next"><svg xmlns="http://www.w3.org/2000/svg"version="1.1" viewBox="0 0 240.823 240.823" >
-<g>
-	<path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
-</g>
-</svg></span>
-            <span class="bread-current">Видеопроизводство</span>
+            <a class="bread-main" href="/">Главная</a><span class="bread-next">&#10095;</span>
+            <a href="/services/">Услуги</a><span class="bread-next">&#10095;</span>
+            <a href="/services/videomaking/">Видеопроизводство</a><span class="bread-next">&#10095;</span>
+            <span class="bread-current">Комплексный продукт</span>
         </nav>
         <section class="page-section videomaking">
             <h1 class="page-title">Видеопроизводство</h1>
@@ -192,7 +193,7 @@
                 <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/OhMvl3jcuUc" frameborder="0" allowfullscreen></iframe></li>
                 <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/82DxIJufKqU" frameborder="0" allowfullscreen></iframe></li>
                 <li class="videomaking-portfolio-item"><iframe width="250" height="250" src="https://www.youtube.com/embed/hwsTPxrj0nA" frameborder="0" allowfullscreen></iframe></li>
-            </ul>
+            </ul>   
         </section>
     </div>
     </main>

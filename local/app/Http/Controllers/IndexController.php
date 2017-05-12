@@ -3,23 +3,31 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Blog;
+use App\Page;
 
 class IndexController extends Controller
 {
     public function index() {
-        return view('index');
+        $blogs = Blog::latest()->take(3)->get();
+        $pageseo = Page::where('link', '/')->get();
+        return view('index', ['blogs' => $blogs, 'pageseo' => $pageseo[0]]);
     }
     public function keises() {
-        return view('pages.keises');
+        $pageseo = Page::where('link', '/keises')->get();
+        return view('pages.keises', ['pageseo' => $pageseo[0]]);
     }
     public function clients(){
-        return view('pages.clients');
+        $pageseo = Page::where('link', '/clients')->get();
+        return view('pages.clients', ['pageseo' => $pageseo[0]]);
     }
     public function business(){
-        return view('pages.business');
+        $pageseo = Page::where('link', '/business')->get();
+        return view('pages.business', ['pageseo' => $pageseo[0]]);
     }
     public function contacts(){
-        return view('pages.contacts');
+        $pageseo = Page::where('link', '/contacts')->get();
+        return view('pages.contacts', ['pageseo' => $pageseo[0]]);
     }
     public function showSuccessPage(){
         return view('actions.success');

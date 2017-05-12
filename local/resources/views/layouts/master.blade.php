@@ -2,4 +2,5 @@
 @include('layouts.header')
 @include('layouts.aside')
 @yield('content')
+@include('layouts.oline-modal')
 @include('layouts.footer')

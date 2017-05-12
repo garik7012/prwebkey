@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title', $pageseo->title)
+@section('keywords', $pageseo->keywords)
+@section('description', $pageseo->description)
 @section('topaside')
     <ul class="left-top-menu__items">
         <li class="left-menu_current"><a href="/services/smi/">Работа со СМИ</a></li>
@@ -11,11 +14,9 @@
 @section('content')
     <div class="page-content">
         <nav class="breadcrumbs">
-            <a class="bread-main" href="/">Главная</a><span class="bread-next"><svg xmlns="http://www.w3.org/2000/svg"version="1.1" viewBox="0 0 240.823 240.823" >
-<g>
-	<path id="Chevron_Right_1_" d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179   l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261   C187.881,124.315,187.881,116.495,183.189,111.816z"/>
-</g>
-</svg></span>
+            <a class="bread-main" href="/">Главная</a><span class="bread-next">&#10095;</span>
+            <a href="/services/">Услуги</a><span class="bread-next">&#10095;</span>
+            <a href="/services/smi/">Работа со СМИ</a><span class="bread-next">&#10095;</span>
             <span class="bread-current">Публикации в интернет СМИ</span>
         </nav>
         <section class="page-section">
@@ -255,11 +256,11 @@
     </div>
     </main>
     <!-- modal -->
-    <div class="modal-container">
+    <div id="smi-public-modal" class="modal-container">
         <div class="smi-modal" onclick="event.stopPropagation()">
             <h3>Вы хотите отправить свой материал на сайт <span class="order-to-site"></span></h3>
             <h4>Пожалуйста, введите свои данные.</h4>
-            <form action="">
+            <form action="/order/publicsmi" method="post" enctype="multipart/form-data">
                 <div class="left-aside-form">
                     <label for="left-aside__input-fio">Имя</label>
                     <input id="left-aside__input-fio" type="text" name="fio">
@@ -267,10 +268,12 @@
                     <input id="left-aside__input-phone" type="text" name="phone">
                     <label for="left-aside__input-email">E-mail</label>
                     <input id="left-aside__input-email" type="text" name="email">
+                    <input type="hidden" name="site">
                     <input type="file" name="ofile">
                 </div>
                 <div class="right-modal-form">
                     <textarea name="message" placeholder="Введите сообщение"></textarea>
+                    {{csrf_field()}}
                     <button type="submit" value="Отправить">Отправить</button>
                 </div>
             </form>
@@ -281,14 +284,15 @@
         $(document).ready(function(){
             $('.smi-table__button').click(function(){
                 var atosend = $(this).parent().parent().find('a').text();
-                $('.order-to-site').text(atosend);
-                $('.modal-container').show();
+                $('#smi-public-modal .order-to-site').text(atosend);
+                $('#smi-public-modal input[name=site]').text(atosend);
+                $('#smi-public-modal').show();
             });
             $('.modal-container').click(function(){
                 $('.modal-container').hide();
             });
             $('.close-modal').click(function(){
-                $('.modal-container').hide();
+                $('#smi-public-modal').hide();
                 $(this).parent().find('input').val('');
                 $(this).parent().find('textarea').val('');
             });

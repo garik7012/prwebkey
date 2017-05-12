@@ -20,11 +20,13 @@ Route::get('/keises', 'IndexController@keises');
 Route::get('/clients', 'IndexController@clients');
 Route::get('/business', 'IndexController@business');
 Route::get('/contacts', 'IndexController@contacts');
-
+//chat
+//Route::get('');
 //orders
 Route::post('/order', 'OrderController@sendOrder');
 Route::post('/order/aside', 'OrderController@sendAsideOrder');
 Route::post('/order/order', 'OrderController@order');
+Route::post('/order/publicsmi', 'OrderController@publicSmi');
 //blog
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{id}', 'BlogController@showArticle');
